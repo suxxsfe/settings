@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# input
+fcitx &
+
+# volume control
+# kmix &
+
+# keyboard
+/home/suxxsfe/bin/xset.sh
+xcape -d -t 200 -e 'Alt_R=Escape' &
+
+# network manager
+# nm-applet &
+
+# backlight
+~/bin/backlight_control +0
+
+# desktop
+hsetroot -full /home/suxxsfe/.icewm/vim.png
+
+# proxy
+
+
+# set desktop
+# pcmanfm --desktop &
+
+#screen shot
+flameshot &
+
+# autolock
+exec xautolock -time 5 -locker slock
+

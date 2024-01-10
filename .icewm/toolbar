@@ -1,0 +1,14 @@
+# This is an example for icewm 2.9.6 toolbar definition file.
+# It will be installed as /usr/share/icewm/toolbar.
+# Place your variants in /etc/icewm or in $HOME/.icewm since
+# modifications to this file will be overwritten when you reinstall icewm.
+#
+prog "xterm" xterm_16x16.xpm lxterminal
+# prog "WebBrowser" web-browser google-chrome-stable --proxy-server="http=127.0.0.1:9910;https=127.0.0.1:9910;socks5://127.0.0.1:9909"
+prog "WebBrowser" web-browser google-chrome-stable
+prog "WebBrowser" web-browser tor-browser
+prog "FileTool" folder_16x16.xpm pcmanfm
+prog "slock" lock_16x16.xpm slock
+prog "shotgun" focus_16x16.xpm shotgun
+prog "amixer -" sub ~/bin/amixer-.sh
+prog "amixer +" add ~/bin/amixer+.sh
